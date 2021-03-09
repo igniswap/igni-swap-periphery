@@ -21,7 +21,7 @@ library IgniLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'8d87e521467a42069b9c3c3f7cb031c3837c96daa8b76ef5973c0c14559a78ea' // init code hash
+                hex'bc1b9870cbee36a5176ff92366c55ac7c86f098fc81c4c36c6fa10bfec0eb547' // init code hash
             ))));
     }
 
@@ -44,7 +44,7 @@ library IgniLibrary {
     function getAmountOut(uint amountIn, uint reserveIn, uint reserveOut) internal pure returns (uint amountOut) {
         require(amountIn > 0, 'IgniLibrary: INSUFFICIENT_INPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0, 'IgniLibrary: INSUFFICIENT_LIQUIDITY');
-        uint amountInWithFee = amountIn.mul(998);
+        uint amountInWithFee = amountIn.mul(996);
         uint numerator = amountInWithFee.mul(reserveOut);
         uint denominator = reserveIn.mul(1000).add(amountInWithFee);
         amountOut = numerator / denominator;
@@ -55,7 +55,7 @@ library IgniLibrary {
         require(amountOut > 0, 'IgniLibrary: INSUFFICIENT_OUTPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0, 'IgniLibrary: INSUFFICIENT_LIQUIDITY');
         uint numerator = reserveIn.mul(amountOut).mul(1000);
-        uint denominator = reserveOut.sub(amountOut).mul(998);
+        uint denominator = reserveOut.sub(amountOut).mul(996);
         amountIn = (numerator / denominator).add(1);
     }
 

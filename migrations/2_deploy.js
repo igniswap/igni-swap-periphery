@@ -2,7 +2,7 @@ var Router = artifacts.require("IgniRouter.sol");
 
 module.exports = function(deployer) {
   // Testnet
-  const factoryAddressTEST = '0xf67C1492fD15ccba695cA98aEF666caf3d6bC8FC'
+  const factoryAddressTEST = '0x322B7a581aABbe9B4743bdf69597e34c2b648fc8'
   const WBNBAddressTEST = '0xae13d989dac2f0debff460ac112a837c89baa7cd'
   deployer.deploy(Router, factoryAddressTEST, WBNBAddressTEST);
 
