@@ -2,12 +2,16 @@ var Router = artifacts.require("IgniRouter.sol");
 
 module.exports = function(deployer) {
   // Testnet
-  const factoryAddressTEST = '0x322B7a581aABbe9B4743bdf69597e34c2b648fc8'
-  const WBNBAddressTEST = '0xae13d989dac2f0debff460ac112a837c89baa7cd'
-  deployer.deploy(Router, factoryAddressTEST, WBNBAddressTEST);
-
+  
+  const factoryAddressTEST = '0x5f76c63aAcA37ABDBcbFF0Ce67A1b8560ACDcbE7'
+  const WBNBAddressTES = '0xae13d989dac2f0debff460ac112a837c89baa7cd'
+  deployer.deploy(Router, factoryAddressTEST, WBNBAddressTES);
+  
+/*
   // BSC
-  /*const factoryAddressTEST = '0xf67C1492fD15ccba695cA98aEF666caf3d6bC8FC'
-  const WBNBAddressTEST = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+  const factoryAddress = '0x5f76c63aAcA37ABDBcbFF0Ce67A1b8560ACDcbE7'
+  const WBNBAddress = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
   deployer.deploy(Router, factoryAddress, WBNBAddress);*/
 };
+
+

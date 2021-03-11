@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://igniswap.finance",
+  "homepage": "https://igniswap.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/igniswap/igni-swap-periphery.git"
@@ -15,7 +15,7 @@
     "contracts"
   ],
   "dependencies": {
-    "@igniswap/igni-swap-core": "https://github.com/igniswap/igni-swap-core.git",
+    "@igniswap/igni-swap-core": "https://github.com/flamatoken/igniswap-v2-core.git",
     "@igniswap/igni-swap-lib": "https://github.com/igniswap/igni-swap-lib.git",
     "@openzeppelin/contracts-upgradeable": "3.2.0",
     "truffle-hdwallet-provider": "^1.0.17",

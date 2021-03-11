@@ -21,7 +21,7 @@ library IgniLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'bc1b9870cbee36a5176ff92366c55ac7c86f098fc81c4c36c6fa10bfec0eb547' // init code hash
+                hex'10e34a561ae3dcbd7ec208b62f6ee05dd61c653d225a8bcb3c231eda14dcdf9f' // init code hash
             ))));
     }
 
